@@ -11,12 +11,9 @@
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *multiplierLabel;
-
 @property (weak, nonatomic) IBOutlet UILabel *answerLabel;
 @property (weak, nonatomic) IBOutlet UITextField *numberTextField;
-
 @property (weak, nonatomic) IBOutlet UISlider *tipSlider;
-
 @property (weak, nonatomic) IBOutlet UISegmentedControl *operatorSegmentControl;
 
 @end
@@ -58,14 +55,13 @@
         self.view.backgroundColor = [UIColor whiteColor];
     }
 
-    if (endValue %3 == 0) {
-        self.answerLabel.text = @"fizz";
-    }
-    if (endValue %5 == 0) {
-        self.answerLabel.text = @"buzz";
-    }
-    if (endValue %3 == 0 && endValue %5 == 0) {
+
+    if (endValue % 3 == 0 && endValue % 5 == 0) {
         self.answerLabel.text = @"fizzbuzz";
+    } else if (endValue % 3 == 0) {
+        self.answerLabel.text = @"fizz";
+    } else if (endValue % 5 == 0) {
+        self.answerLabel.text = @"buzz";
     } else {
         self.answerLabel.text = answerLabel;
     }

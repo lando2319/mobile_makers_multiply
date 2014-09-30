@@ -21,7 +21,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="152" y="138" width="97" height="30"/>
+                                    <rect key="frame" x="152" y="205" width="97" height="30"/>
                                 </variation>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hea-6s-Un7">
@@ -30,7 +30,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="179" y="226" width="42" height="21"/>
+                                    <rect key="frame" x="179" y="311" width="42" height="21"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mpl-qE-coy">
@@ -39,19 +39,19 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="168" y="306" width="65" height="30"/>
+                                    <rect key="frame" x="168" y="370" width="65" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="onCalculateButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xbZ-Wk-4RU"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KlJ-yV-xwu">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KlJ-yV-xwu">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="179" y="84" width="42" height="21"/>
+                                    <rect key="frame" x="179" y="91" width="42" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="909-bt-gzP">
@@ -60,18 +60,9 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="298" y="356" width="11" height="21"/>
+                                    <rect key="frame" x="195" y="259" width="11" height="21"/>
                                 </variation>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="DcX-7f-vh4">
-                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="141" y="405" width="118" height="31"/>
-                                </variation>
-                                <connections>
-                                    <action selector="actionSlider:" destination="vXZ-lx-hvc" eventType="valueChanged" id="ZFq-Zj-Bbf"/>
-                                </connections>
-                            </slider>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="V4j-dB-ZJE">
                                 <rect key="frame" x="-61" y="-14" width="123" height="29"/>
                                 <segments>
@@ -79,9 +70,18 @@
                                     <segment title="/"/>
                                 </segments>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="87" y="353" width="123" height="29"/>
+                                    <rect key="frame" x="139" y="146" width="123" height="29"/>
                                 </variation>
                             </segmentedControl>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="DcX-7f-vh4">
+                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="141" y="36" width="118" height="31"/>
+                                </variation>
+                                <connections>
+                                    <action selector="actionSlider:" destination="vXZ-lx-hvc" eventType="valueChanged" id="ZFq-Zj-Bbf"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -90,8 +90,8 @@
                                 <exclude reference="mpl-qE-coy"/>
                                 <exclude reference="KlJ-yV-xwu"/>
                                 <exclude reference="909-bt-gzP"/>
-                                <exclude reference="DcX-7f-vh4"/>
                                 <exclude reference="V4j-dB-ZJE"/>
+                                <exclude reference="DcX-7f-vh4"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -100,8 +100,8 @@
                                 <include reference="mpl-qE-coy"/>
                                 <include reference="KlJ-yV-xwu"/>
                                 <include reference="909-bt-gzP"/>
-                                <include reference="DcX-7f-vh4"/>
                                 <include reference="V4j-dB-ZJE"/>
+                                <include reference="DcX-7f-vh4"/>
                             </mask>
                         </variation>
                     </view>
